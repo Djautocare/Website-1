@@ -1,148 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content />
-        <meta name="author" content />
-        <title>Contact us</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body class="d-flex flex-column">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html">DJ Autocare Detailing</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                            <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-                            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-                              <li class="nav-item"><a class="nav-link" href="portfolio-overview.html">Portfolio</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- Page content-->
-            <section class="py-5">
-                <div class="container px-5">
-                    <!-- Contact form-->
-                    <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
-                        <div class="text-center mb-5">
-                           <div class="text-center mb-3">
-    <img src="assets/img/logo.png"
-         alt="DJ Auto Care Detailing logo"
-         style="max-width:180px;"
-         class="img-fluid">
-</div>
-                            <h1 class="fw-bolder">Get in touch</h1>
-                            <p class="lead fw-normal text-muted mb-0">We'd love to hear from you</p>
-                        </div>
-                        <div class="row gx-5 justify-content-center">
-                            <div class="col-lg-8 col-xl-6">
-                                <!-- * * * * * * * * * * * * * * *-->
-                                <!-- * * SB Forms Contact Form * *-->
-                                <!-- * * * * * * * * * * * * * * *-->
-                                <!-- This form is pre-integrated with SB Forms.-->
-                                <!-- To make this form functional, sign up at-->
-                                <!-- https://startbootstrap.com/solution/contact-forms-->
-                                <!-- to get an API token!-->
-                            <div class="d-grid gap-3">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Contact us | DJ Autocare Detailing</title>
 
-  <a href="https://wa.me/447923689444?text=Hi%20I%E2%80%99d%20like%20to%20book%20a%20detail%20please"
-     target="_blank"
-     class="btn btn-success btn-lg"> 
-      <i class="bi bi-whatsapp me-2"></i>
-     Message us on WhatsApp
-  </a>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
-  <a href="https://instagram.com/djautocaredetailing"
-     target="_blank"
-     class="btn btn-outline-dark btn-lg">
-       <i class="bi bi-instagram me-2"></i>
-     Message us on Instagram
-  </a>
-                                
-                                <a href="https://www.tiktok.com/@djautocaredetailing"
-   target="_blank"
-   class="btn btn-outline-dark btn-lg">
-   <i class="bi bi-tiktok me-2"></i>
-   Find us on TikTok
-</a>
+    <!-- Bootstrap icons (keep consistent site-wide) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
 
-                                 <!-- Email (opens mail app) -->
-                <a href="mailto:dylansmith@djautocaredetailing.uk?subject=Car%20Detail%20Enquiry"
-                   class="btn btn-primary btn-lg">
-                       <i class="bi bi-envelope-fill me-2"></i>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- Contact page polish -->
+    <style>
+      /* Subtle page background so it doesn't feel like a blank sheet */
+      .page-bg {
+        background: radial-gradient(circle at top right,
+          rgba(13,110,253,0.10),
+          rgba(248,249,250,1) 55%);
+      }
+
+      /* Main contact card */
+      .contact-card {
+        background: #fff;
+        border-radius: 18px;
+        box-shadow: 0 24px 60px rgba(0,0,0,0.10);
+        border: 1px solid rgba(0,0,0,0.05);
+      }
+
+      /* Button polish */
+      .btn-lg {
+        border-radius: 14px;
+      }
+      .btn {
+        transition: transform .18s ease, box-shadow .18s ease;
+      }
+      .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 26px rgba(0,0,0,0.12);
+      }
+      .btn-success:hover {
+        box-shadow: 0 12px 26px rgba(25,135,84,0.25);
+      }
+      .btn-primary:hover {
+        box-shadow: 0 12px 26px rgba(13,110,253,0.25);
+      }
+
+      /* Logo polish */
+      .contact-logo {
+        background: #fff;
+        border-radius: 16px;
+        padding: 14px 16px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+      }
+
+      /* Trust strip */
+      .trust-strip span {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 12px;
+        border-radius: 999px;
+        background: rgba(13,110,253,0.08);
+        color: #0b5ed7;
+        font-weight: 600;
+        font-size: 0.95rem;
+      }
+
+      /* Bottom feature icons pop */
+      .feature {
+        box-shadow: 0 14px 30px rgba(13,110,253,0.18);
+        transition: transform .18s ease;
+      }
+      .feature:hover {
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+
+  <body class="d-flex flex-column">
+    <main class="flex-shrink-0 page-bg">
+      <!-- Navigation-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-5">
+          <a class="navbar-brand" href="index.html">DJ Autocare Detailing</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+              <li class="nav-item"><a class="nav-link" href="portfolio-overview.html">Portfolio</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Page content-->
+      <section class="py-5">
+        <div class="container px-5">
+
+          <!-- Contact card -->
+          <div class="contact-card rounded-3 py-5 px-4 px-md-5 mb-5">
+            <div class="text-center mb-5">
+
+              <div class="mb-3">
+                <span class="contact-logo">
+                  <img src="assets/img/logo.png"
+                       alt="DJ Auto Care Detailing logo"
+                       style="max-width:180px;"
+                       class="img-fluid">
+                </span>
+              </div>
+
+              <h1 class="fw-bolder mb-2">Get in touch</h1>
+              <p class="lead fw-normal text-muted mb-0">We'd love to hear from you</p>
+            </div>
+
+            <div class="row gx-5 justify-content-center">
+              <div class="col-lg-8 col-xl-6">
+                <div class="d-grid gap-3">
+
+                  <a href="https://wa.me/447923689444?text=Hi%20I%E2%80%99d%20like%20to%20book%20a%20detail%20please"
+                     target="_blank"
+                     class="btn btn-success btn-lg">
+                    <i class="bi bi-whatsapp me-2"></i>
+                    Message us on WhatsApp
+                  </a>
+
+                  <a href="https://instagram.com/djautocaredetailing"
+                     target="_blank"
+                     class="btn btn-outline-dark btn-lg">
+                    <i class="bi bi-instagram me-2"></i>
+                    Message us on Instagram
+                  </a>
+
+                  <a href="https://www.tiktok.com/@djautocaredetailing"
+                     target="_blank"
+                     class="btn btn-outline-dark btn-lg">
+                    <i class="bi bi-tiktok me-2"></i>
+                    Find us on TikTok
+                  </a>
+
+                  <a href="mailto:dylansmith@djautocaredetailing.uk?subject=Car%20Detail%20Enquiry"
+                     class="btn btn-primary btn-lg">
+                    <i class="bi bi-envelope-fill me-2"></i>
                     Email us
-                </a>
+                  </a>
 
-</div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Contact cards-->
-                    <div class="row gx-5 row-cols-2 row-cols-lg-4 py-5">
-                       <div class="col">
-  <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
-    <i class="bi bi-pin-map"></i>
-  </div>
-  <div class="h5">Manchester Coverage</div>
-  <p class="text-muted mb-0">
-    Fully mobile car detailing across Manchester and surrounding areas.
-  </p>
-</div>
-
-                    <div class="col">
-  <a href="about.html" class="text-decoration-none">
-    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
-      <i class="bi bi-book"></i>
-    </div>
-    <div class="h5 text-dark">Our Story</div>
-    <p class="text-muted mb-0">
-      Learn more about DJ Auto Care Detailing and how we got started.
-    </p>
-  </a>
-</div>
-
-                  <div class="col">
-  <a href="faq.html" class="text-decoration-none">
-    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
-      <i class="bi bi-question-circle"></i>
-    </div>
-    <div class="h5 text-dark">Got a question?</div>
-    <p class="text-muted mb-0">Browse FAQ's to find solutions.</p>
-  </a>
-</div>
-
-                      <div class="col">
-  <a href="pricing.html" class="text-decoration-none">
-    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
-      <i class="bi bi-cash-stack"></i>
-    </div>
-    <div class="h5 text-dark">Pricing & Packages</div>
-    <p class="text-muted mb-0">
-      View our exterior, full detail, and maintenance plans.
-    </p>
-  </a>
-</div>
-
-                    </div>
                 </div>
-            </section>
-        </main>
-        <!-- Footer-->
-     <footer class="bg-dark py-4 mt-auto">
+
+                <!-- Trust strip -->
+                <div class="trust-strip d-flex flex-wrap justify-content-center gap-2 mt-4">
+                  <span><i class="bi bi-person-check"></i> Owner-operated</span>
+                  <span><i class="bi bi-truck"></i> Mobile service</span>
+                  <span><i class="bi bi-geo-alt"></i> Manchester</span>
+                </div>
+
+                <p class="text-muted text-center mt-3 mb-0" style="font-size:0.95rem;">
+                  Fastest reply is usually on WhatsApp.
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact cards -->
+          <div class="row gx-5 row-cols-2 row-cols-lg-4 py-4">
+            <div class="col">
+              <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+                <i class="bi bi-pin-map"></i>
+              </div>
+              <div class="h5">Manchester Coverage</div>
+              <p class="text-muted mb-0">
+                Fully mobile car detailing across Manchester and surrounding areas.
+              </p>
+            </div>
+
+            <div class="col">
+              <a href="about.html" class="text-decoration-none">
+                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+                  <i class="bi bi-book"></i>
+                </div>
+                <div class="h5 text-dark">Our Story</div>
+                <p class="text-muted mb-0">
+                  Learn more about DJ Auto Care Detailing and how we got started.
+                </p>
+              </a>
+            </div>
+
+            <div class="col">
+              <a href="faq.html" class="text-decoration-none">
+                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+                  <i class="bi bi-question-circle"></i>
+                </div>
+                <div class="h5 text-dark">Got a question?</div>
+                <p class="text-muted mb-0">Browse FAQ's to find solutions.</p>
+              </a>
+            </div>
+
+            <div class="col">
+              <a href="pricing.html" class="text-decoration-none">
+                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+                  <i class="bi bi-cash-stack"></i>
+                </div>
+                <div class="h5 text-dark">Pricing & Packages</div>
+                <p class="text-muted mb-0">
+                  View our exterior, full detail, and maintenance plans.
+                </p>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer-->
+    <footer class="bg-dark py-4 mt-auto">
       <div class="container px-5">
         <div class="row align-items-center justify-content-between flex-column flex-sm-row">
           <div class="col-auto">
@@ -158,19 +247,10 @@
         </div>
       </div>
     </footer>
-<!-- Bootstrap core JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Core theme JS-->
-<script src="js/scripts.js"></script>
-
-<!-- SB Forms JS (optional – only needed if you use their form) -->
-<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
