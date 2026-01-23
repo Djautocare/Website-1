@@ -13,6 +13,63 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
+    <!-- Cookie notice (homepage only) -->
+<div id="cookieBanner" style="
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  background: rgba(33,37,41,0.98);
+  color: #fff;
+  padding: 14px 16px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  z-index: 1080;
+  display: none;
+">
+  <div style="
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  ">
+    <p style="margin:0; font-size:0.95rem; max-width: 800px;">
+      We use essential cookies and privacy-friendly analytics to ensure this website
+      works properly and to understand how it’s used.
+      <a href="/privacy.html" style="color:#fff; text-decoration:underline;">
+        Learn more
+      </a>.
+    </p>
+
+    <div style="display:flex; gap:10px;">
+      <button id="cookieAccept" class="btn btn-light btn-sm">
+        Accept
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    const KEY = "dj_cookie_seen";
+    const banner = document.getElementById("cookieBanner");
+    const acceptBtn = document.getElementById("cookieAccept");
+
+    // If already accepted, do nothing
+    if (localStorage.getItem(KEY)) return;
+
+    // Show banner
+    banner.style.display = "block";
+
+    // Accept handler
+    acceptBtn.addEventListener("click", function () {
+      localStorage.setItem(KEY, "yes");
+      banner.style.display = "none";
+    });
+  })();
+</script>
+
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
             <!-- Navigation-->
