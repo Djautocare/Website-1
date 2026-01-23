@@ -1,162 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Pricing DJ Autocare DEtailing</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body class="d-flex flex-column">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html">DJ Autocare Detailing</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                            <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-                            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Pricing | DJ Autocare Detailing</title>
 
-                  <li class="nav-item"><a class="nav-link" href="portfolio-overview.html">Portfolio</a></li>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
-                        </ul>
-                    </div>
+    <!-- Bootstrap icons (match your other pages) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- Pricing page polish -->
+    <style>
+      .pricing-bg {
+        background: radial-gradient(circle at top right,
+          rgba(13,110,253,0.10),
+          rgba(248,249,250,1) 55%);
+      }
+
+      .pricing-card {
+        border-radius: 18px;
+        border: 1px solid rgba(0,0,0,0.06);
+        box-shadow: 0 20px 55px rgba(0,0,0,0.08);
+        transition: transform .18s ease, box-shadow .18s ease;
+        overflow: hidden;
+      }
+
+      .pricing-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 28px 70px rgba(0,0,0,0.12);
+      }
+
+      /* "Featured" plan styling */
+      .pricing-featured {
+        border: 2px solid rgba(13,110,253,0.30);
+      }
+      .featured-top {
+        background: rgba(13,110,253,0.08);
+        padding: 14px 18px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        border-bottom: 1px solid rgba(0,0,0,0.06);
+      }
+      .featured-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: #0d6efd;
+        color: #fff;
+        font-weight: 700;
+        font-size: 0.85rem;
+      }
+
+      .btn {
+        transition: transform .18s ease, box-shadow .18s ease;
+        border-radius: 14px;
+      }
+      .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 26px rgba(0,0,0,0.12);
+      }
+
+      .price-small {
+        font-size: 0.95rem;
+        color: #6c757d;
+      }
+
+      .section-divider {
+        height: 1px;
+        background: rgba(0,0,0,0.08);
+        max-width: 980px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+
+  <body class="d-flex flex-column">
+    <main class="flex-shrink-0">
+      <!-- Navigation-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-5">
+          <a class="navbar-brand" href="index.html">DJ Autocare Detailing</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              <li class="nav-item"><a class="nav-link active" href="pricing.html">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+              <li class="nav-item"><a class="nav-link" href="portfolio-overview.html">Portfolio</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Pricing section-->
+      <section class="pricing-bg py-5">
+        <div class="container px-5 my-5">
+          <div class="text-center mb-5">
+            <h1 class="fw-bolder">Clear honest prices with no hidden add-ons</h1>
+            <p class="lead fw-normal text-muted mb-0">Choose the level of care your car needs</p>
+          </div>
+
+          <div class="section-divider mb-5"></div>
+
+          <div class="row gx-5 justify-content-center">
+
+            <!-- Exterior -->
+            <div class="col-lg-6 col-xl-4 mb-4">
+              <div class="card pricing-card h-100">
+                <div class="card-body p-5">
+                  <div class="small text-uppercase fw-bold text-muted">Exterior only</div>
+
+                  <div class="mb-3">
+                    <span class="display-4 fw-bold">£20</span>
+                    <span class="price-small">from</span>
+                  </div>
+
+                  <ul class="list-unstyled mb-4">
+                    <li class="mb-2">
+                      <i class="bi bi-check text-primary"></i>
+                      <strong>Pre-wash</strong>
+                    </li>
+                    <li class="mb-2">
+                      <i class="bi bi-check text-primary"></i>
+                      Safe contact wash
+                    </li>
+                    <li class="mb-2">
+                      <i class="bi bi-check text-primary"></i>
+                      Wheels & tyres cleaned
+                    </li>
+                    <li class="mb-2">
+                      <i class="bi bi-check text-primary"></i>
+                      Door shuts cleaned
+                    </li>
+                    <li class="mb-2">
+                      <i class="bi bi-check text-primary"></i>
+                      Streak free exterior glass
+                    </li>
+                  </ul>
+
+                  <div class="d-grid">
+                    <a class="btn btn-outline-primary"
+                       href="https://wa.me/447923689444?text=Hi%20I%E2%80%99m%20interested%20in%20your%20Exterior%20Detail">
+                      Book exterior only
+                    </a>
+                  </div>
+
                 </div>
-            </nav>
-            <!-- Pricing section-->
-            <section class="bg-light py-5">
-                <div class="container px-5 my-5">
-                    <div class="text-center mb-5">
-                        <h1 class="fw-bolder">Clear honest prices with no hidden add ons</h1>
-                        <p class="lead fw-normal text-muted mb-0">Choose the level of care your car needs</p>
-                    </div>
-                    <div class="row gx-5 justify-content-center">
-                        <!-- Pricing card free-->
-                        <div class="col-lg-6 col-xl-4">
-                            <div class="card mb-5 mb-xl-0">
-                                <div class="card-body p-5">
-                                    <div class="small text-uppercase fw-bold text-muted">Exterior only</div>
-                                    <div class="mb-3">
-                                        <span class="display-4 fw-bold">£20</span>
-                                        <span class="text-muted"></span>
-                                    </div>
-                                    <ul class="list-unstyled mb-4">
-                                        <li class="mb-2">
-                                            <i class="bi bi-check text-primary"></i>
-                                            <strong>Pre-wash</strong>
-                                        </li>
-                                        <li class="mb-2">
-                                            <i class="bi bi-check text-primary"></i>
-                                            Safe contact wash
-                                        </li>
-                                        <li class="mb-2">
-                                            <i class="bi bi-check text-primary"></i>
-                                            Wheels & tyres cleaned
-                                        </li>
-                                        <li class="mb-2">
-                                            <i class="bi bi-check text-primary"></i>
-                                            Door shuts cleaned
-                                        </li>
-                                        <li class="mb-2 text-muted">
-                                            <i class="bi bi-check text-primary"></i>
-                                            Streak free exterior glass
-                                        </li>
-                                    
-                                     
-                                    </ul>
-                                    <div class="d-grid"><a class="btn btn-outline-primary" href="https://wa.me/447923689444?text=Hi%20I’m%20interested%20in%20your%20Exterior%20Detail">Book exterior only</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Pricing card pro-->
-                        <div class="col-lg-6 col-xl-4">
-                            <div class="card mb-5 mb-xl-0">
-                                <div class="card-body p-5">
-                                    <div class="small text-uppercase fw-bold">
-                                      
-                                        Full detail
-                                    </div>
-                                    <div class="mb-3">
-                                        <span class="display-4 fw-bold">£50</span>
-                                        <span class="text-muted"></span>
-                                    </div>
-                                    <ul class="list-unstyled mb-4">
-                                        <li class="mb-2">
-                                            <i class="bi bi-check text-primary"></i>
-                                            <strong>Full exterior detail</strong>
-                                        </li>
-                                        <li class="mb-2">
-                                            <i class="bi bi-check text-primary"></i>
-                                            Full interior vacuum
-                                        </li>
-                                        <li class="mb-2">
-                                            <i class="bi bi-check text-primary"></i>
-                                            Plastics & trims cleaned
-                                        </li>
-                                        <li class="mb-2">
-                                            <i class="bi bi-check text-primary"></i>
-                                            Streak free interior glass
-                                        </li>
-                                        <li class="mb-2">
-                                            <i class="bi bi-check text-primary"></i>
-                                            Finishing touches throughout
-                                        </li>
-                                  
-                                    </ul>
-                                    <div class="d-grid"><a class="btn btn-outline-primary" href="https://wa.me/447923689444?text=Hi%20I’m%20interested%20in%20your%20Full%20Detail%20service%20and%20would%20like%20more%20information">Book Full detail</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Pricing card enterprise-->
-                        <div class="col-lg-6 col-xl-4">
-                            <div class="card">
-                                <div class="card-body p-5"> 
-                                      <i class="bi bi-star-fill text-warning"></i>
-                                    <div class="small text-uppercase fw-bold text-muted">Maintenance plan</div>
-                                    <div class="mb-3">
-                                        <span class="display-4 fw-bold">£45</span>
-                                        <span class="text-muted">/ 6 weeks.</span>
-                                    </div>
-                                    <ul class="list-unstyled mb-4">
-                                        <li class="mb-2">
-                                            <i class="bi bi-check text-primary"></i>
-                                            <strong>Full detail</strong>
-                                        </li>
-                                        <li class="mb-2">
-                                            <i class="bi bi-check text-primary"></i>
-                                            Light decontamincation where required
-                                        </li>
-                                        <li class="mb-2">
-                                            <i class="bi bi-check text-primary"></i>
-                                            Spray protection
-                                        </li>
-                                        <li class="mb-2">
-                                            <i class="bi bi-check text-primary"></i>
-                                            Priority slots
-                                        </li>
-                            
-                                    </ul>
-                                    <div class="d-grid"><a class="btn btn-outline-primary" href="https://wa.me/447923689444?text=Hi%20I’m%20interested%20in%20your%206-weekly%20Maintenance%20Detail%20plan%20and%20would%20like%20some%20more%20information."">Book maintenance plan</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+            </div>
+
+            <!-- Full Detail (Featured) -->
+            <div class="col-lg-6 col-xl-4 mb-4">
+              <div class="card pricing-card pricing-featured h-100">
+                <div class="featured-top">
+                  <span class="featured-badge">
+                    <i class="bi bi-star-fill"></i> Most popular
+                  </span>
+                  <span class="text-muted small">Best overall value</span>
                 </div>
-            </section>
-        </main>
-        <!-- Footer-->
-         <footer class="bg-dark py-4 mt-auto">
+
+                <div class="card-body p-5">
+                  <div class="small text-uppercase fw-bold">Full detail</div>
+
+                  <div class="mb-3">
+                    <span class="display-4 fw-bold">£50</span>
+                    <span class="price-small">from</span>
+                  </div>
+
+                  <ul class="list-unstyled mb-4">
+                    <li class="mb-2">
+                      <i class="bi bi-check text-primary"></i>
+                      <strong>Full exterior detail</strong>
+                    </li>
+                    <li class="mb-2">
+                      <i class="bi bi-check text-primary"></i>
+                      Full interior vacuum
+                    </li>
+                    <li class="mb-2">
+                      <i class="bi bi-check text-primary"></i>
+                      Plastics & trims cleaned
+                    </li>
+                    <li class="mb-2">
+                      <i class="bi bi-check text-primary"></i>
+                      Streak free interior glass
+                    </li>
+                    <li class="mb-2">
+                      <i class="bi bi-check text-primary"></i>
+                      Finishing touches throughout
+                    </li>
+                  </ul>
+
+                  <div class="d-grid">
+                    <a class="btn btn-primary"
+                       href="https://wa.me/447923689444?text=Hi%20I%E2%80%99m%20interested%20in%20your%20Full%20Detail%20service%20and%20would%20like%20more%20information">
+                      Book full detail
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Maintenance -->
+            <div class="col-lg-6 col-xl-4 mb-4">
+              <div class="card pricing-card h-100">
+                <div class="card-body p-5">
+                  <div class="d-flex align-items-center gap-2 mb-2">
+                    <i class="bi bi-arrow-repeat text-primary"></i>
+                    <div class="small text-uppercase fw-bold text-muted m-0">Maintenance plan</div>
+                  </div>
+
+                  <div class="mb-3">
+                    <span class="display-4 fw-bold">£45</span>
+                    <span class="text-muted">/ 6 weeks</span>
+                  </div>
+
+                  <ul class="list-unstyled mb-4">
+                    <li class="mb-2">
+                      <i class="bi bi-check text-primary"></i>
+                      <strong>Full detail</strong>
+                    </li>
+                    <li class="mb-2">
+                      <i class="bi bi-check text-primary"></i>
+                      Light decontamination where required
+                    </li>
+                    <li class="mb-2">
+                      <i class="bi bi-check text-primary"></i>
+                      Spray protection
+                    </li>
+                    <li class="mb-2">
+                      <i class="bi bi-check text-primary"></i>
+                      Priority slots
+                    </li>
+                  </ul>
+
+                  <div class="d-grid">
+                    <a class="btn btn-outline-primary"
+                       href="https://wa.me/447923689444?text=Hi%20I%E2%80%99m%20interested%20in%20your%206-weekly%20Maintenance%20Detail%20plan%20and%20would%20like%20some%20more%20information.">
+                      Book maintenance plan
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Optional add-ons note -->
+          <div class="text-center mt-5">
+            <p class="text-muted mb-2">
+              Need something extra? Pet hair removal, heavy staining, or a machine polish can be quoted before we start.
+            </p>
+            <a class="btn btn-outline-dark" href="contact.html">
+              Ask for a quote
+            </a>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer-->
+    <footer class="bg-dark py-4 mt-auto">
       <div class="container px-5">
         <div class="row align-items-center justify-content-between flex-column flex-sm-row">
           <div class="col-auto">
@@ -173,9 +296,9 @@
       </div>
     </footer>
 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
