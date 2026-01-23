@@ -18,6 +18,16 @@
 
     <!-- Contact page polish -->
     <style>
+        /* Page background – removes flat white */
+.page-bg {
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(13,110,253,0.12),
+      rgba(248,249,250,1) 60%
+    );
+}
+
       /* Subtle page background so it doesn't feel like a blank sheet */
       .page-bg {
         background: radial-gradient(circle at top right,
@@ -84,10 +94,21 @@
         transform: translateY(-2px);
       }
     </style>
+      <style>
+  .contact-card {
+    background: linear-gradient(180deg, #ffffff 0%, #f3f7ff 100%);
+    border-radius: 20px;
+    box-shadow:
+      0 30px 70px rgba(0,0,0,0.12),
+      inset 0 1px 0 rgba(255,255,255,0.7);
+  }
+</style>
+
   </head>
 
   <body class="d-flex flex-column">
     <main class="flex-shrink-0 page-bg">
+">
       <!-- Navigation-->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container px-5">
@@ -117,6 +138,7 @@
           <!-- Contact card -->
           <div class="contact-card rounded-3 py-5 px-4 px-md-5 mb-5">
             <div class="text-center mb-5">
+                
 
               <div class="mb-3">
                 <span class="contact-logo">
