@@ -3,118 +3,93 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="description" content="Contact DJ Autocare Detailing – mobile car detailing across Manchester" />
     <title>Contact us | DJ Autocare Detailing</title>
 
-    <!-- Favicon-->
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
-    <!-- Bootstrap icons (keep consistent site-wide) -->
+    <!-- Bootstrap icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <!-- Core theme CSS (includes Bootstrap)-->
+    <!-- Core theme CSS -->
     <link href="css/styles.css" rel="stylesheet" />
 
-    <!-- Contact page polish -->
+    <!-- Page styling -->
     <style>
-        /* Page background – removes flat white */
-.page-bg {
-  background:
-    radial-gradient(
-      circle at top right,
-      rgba(13,110,253,0.12),
-      rgba(248,249,250,1) 60%
-    );
-}
-
-      /* Subtle page background so it doesn't feel like a blank sheet */
-      .page-bg {
-        background: radial-gradient(circle at top right,
-          rgba(13,110,253,0.10),
-          rgba(248,249,250,1) 55%);
+      /* Page background – soft colour, not white */
+      .page-bg{
+        background:
+          radial-gradient(circle at 85% 10%, rgba(13,110,253,0.22), rgba(248,249,250,0) 55%),
+          radial-gradient(circle at 10% 25%, rgba(25,135,84,0.14), rgba(248,249,250,0) 60%),
+          linear-gradient(180deg, #eef3fb 0%, #ffffff 60%);
       }
 
       /* Main contact card */
-      .contact-card {
-        background: #fff;
+      .contact-card{
+        background: linear-gradient(180deg, #ffffff 0%, #eaf1ff 100%);
+        border-radius: 22px;
+        border: 1px solid rgba(13,110,253,0.12);
+        box-shadow: 0 35px 85px rgba(0,0,0,0.18);
+      }
+
+      /* Logo container */
+      .contact-logo{
+        background: linear-gradient(180deg, #ffffff 0%, #eef4ff 100%);
         border-radius: 18px;
-        box-shadow: 0 24px 60px rgba(0,0,0,0.10);
-        border: 1px solid rgba(0,0,0,0.05);
-      }
-
-      /* Button polish */
-      .btn-lg {
-        border-radius: 14px;
-      }
-      .btn {
-        transition: transform .18s ease, box-shadow .18s ease;
-      }
-      .btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 12px 26px rgba(0,0,0,0.12);
-      }
-      .btn-success:hover {
-        box-shadow: 0 12px 26px rgba(25,135,84,0.25);
-      }
-      .btn-primary:hover {
-        box-shadow: 0 12px 26px rgba(13,110,253,0.25);
-      }
-
-      /* Logo polish */
-      .contact-logo {
-        background: #fff;
-        border-radius: 16px;
-        padding: 14px 16px;
+        padding: 16px 18px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+        box-shadow: 0 18px 45px rgba(0,0,0,0.12);
+        border: 1px solid rgba(13,110,253,0.12);
       }
 
-      /* Trust strip */
-      .trust-strip span {
+      /* Buttons */
+      .btn-lg{ border-radius: 14px; }
+      .btn{
+        transition: transform .18s ease, box-shadow .18s ease;
+      }
+      .btn:hover{
+        transform: translateY(-2px);
+        box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+      }
+      .btn-success:hover{ box-shadow: 0 14px 30px rgba(25,135,84,0.25); }
+      .btn-primary:hover{ box-shadow: 0 14px 30px rgba(13,110,253,0.25); }
+
+      /* Trust pills */
+      .trust-strip span{
         display: inline-flex;
         align-items: center;
         gap: 8px;
-        padding: 10px 12px;
+        padding: 10px 14px;
         border-radius: 999px;
-        background: rgba(13,110,253,0.08);
+        background: rgba(13,110,253,0.12);
+        border: 1px solid rgba(13,110,253,0.12);
         color: #0b5ed7;
         font-weight: 600;
         font-size: 0.95rem;
       }
 
-      /* Bottom feature icons pop */
-      .feature {
+      /* Bottom feature icons */
+      .feature{
         box-shadow: 0 14px 30px rgba(13,110,253,0.18);
         transition: transform .18s ease;
       }
-      .feature:hover {
+      .feature:hover{
         transform: translateY(-2px);
       }
     </style>
-      <style>
-  .contact-card {
-    background: linear-gradient(180deg, #ffffff 0%, #f3f7ff 100%);
-    border-radius: 20px;
-    box-shadow:
-      0 30px 70px rgba(0,0,0,0.12),
-      inset 0 1px 0 rgba(255,255,255,0.7);
-  }
-</style>
-
   </head>
 
   <body class="d-flex flex-column">
     <main class="flex-shrink-0 page-bg">
-">
-      <!-- Navigation-->
+
+      <!-- Navigation -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container px-5">
           <a class="navbar-brand" href="index.html">DJ Autocare Detailing</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
             <span class="navbar-toggler-icon"></span>
           </button>
 
@@ -131,69 +106,59 @@
         </div>
       </nav>
 
-      <!-- Page content-->
+      <!-- Content -->
       <section class="py-5">
         <div class="container px-5">
 
           <!-- Contact card -->
-          <div class="contact-card rounded-3 py-5 px-4 px-md-5 mb-5">
+          <div class="contact-card py-5 px-4 px-md-5 mb-5">
             <div class="text-center mb-5">
-                
 
               <div class="mb-3">
                 <span class="contact-logo">
-                  <img src="assets/img/logo.png"
-                       alt="DJ Auto Care Detailing logo"
-                       style="max-width:180px;"
-                       class="img-fluid">
+                  <img src="assets/img/logo.png" alt="DJ Autocare Detailing logo" style="max-width:180px;" class="img-fluid">
                 </span>
               </div>
 
               <h1 class="fw-bolder mb-2">Get in touch</h1>
-              <p class="lead fw-normal text-muted mb-0">We'd love to hear from you</p>
+              <p class="lead text-muted mb-0">We'd love to hear from you</p>
             </div>
 
-            <div class="row gx-5 justify-content-center">
+            <div class="row justify-content-center">
               <div class="col-lg-8 col-xl-6">
-                <div class="d-grid gap-3">
 
-                  <a href="https://wa.me/447923689444?text=Hi%20I%E2%80%99d%20like%20to%20book%20a%20detail%20please"
+                <div class="d-grid gap-3">
+                  <a href="https://wa.me/447923689444?text=Hi%20I’d%20like%20to%20book%20a%20detail%20please"
                      target="_blank"
                      class="btn btn-success btn-lg">
-                    <i class="bi bi-whatsapp me-2"></i>
-                    Message us on WhatsApp
+                    <i class="bi bi-whatsapp me-2"></i> Message us on WhatsApp
                   </a>
 
                   <a href="https://instagram.com/djautocaredetailing"
                      target="_blank"
                      class="btn btn-outline-dark btn-lg">
-                    <i class="bi bi-instagram me-2"></i>
-                    Message us on Instagram
+                    <i class="bi bi-instagram me-2"></i> Message us on Instagram
                   </a>
 
                   <a href="https://www.tiktok.com/@djautocaredetailing"
                      target="_blank"
                      class="btn btn-outline-dark btn-lg">
-                    <i class="bi bi-tiktok me-2"></i>
-                    Find us on TikTok
+                    <i class="bi bi-tiktok me-2"></i> Find us on TikTok
                   </a>
 
                   <a href="mailto:dylansmith@djautocaredetailing.uk?subject=Car%20Detail%20Enquiry"
                      class="btn btn-primary btn-lg">
-                    <i class="bi bi-envelope-fill me-2"></i>
-                    Email us
+                    <i class="bi bi-envelope-fill me-2"></i> Email us
                   </a>
-
                 </div>
 
-                <!-- Trust strip -->
                 <div class="trust-strip d-flex flex-wrap justify-content-center gap-2 mt-4">
                   <span><i class="bi bi-person-check"></i> Owner-operated</span>
                   <span><i class="bi bi-truck"></i> Mobile service</span>
                   <span><i class="bi bi-geo-alt"></i> Manchester</span>
                 </div>
 
-                <p class="text-muted text-center mt-3 mb-0" style="font-size:0.95rem;">
+                <p class="text-muted text-center mt-3 mb-0">
                   Fastest reply is usually on WhatsApp.
                 </p>
 
@@ -201,16 +166,14 @@
             </div>
           </div>
 
-          <!-- Contact cards -->
+          <!-- Bottom links -->
           <div class="row gx-5 row-cols-2 row-cols-lg-4 py-4">
             <div class="col">
               <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
                 <i class="bi bi-pin-map"></i>
               </div>
               <div class="h5">Manchester Coverage</div>
-              <p class="text-muted mb-0">
-                Fully mobile car detailing across Manchester and surrounding areas.
-              </p>
+              <p class="text-muted mb-0">Fully mobile detailing across Manchester.</p>
             </div>
 
             <div class="col">
@@ -219,9 +182,7 @@
                   <i class="bi bi-book"></i>
                 </div>
                 <div class="h5 text-dark">Our Story</div>
-                <p class="text-muted mb-0">
-                  Learn more about DJ Auto Care Detailing and how we got started.
-                </p>
+                <p class="text-muted mb-0">How DJ Autocare Detailing started.</p>
               </a>
             </div>
 
@@ -231,7 +192,7 @@
                   <i class="bi bi-question-circle"></i>
                 </div>
                 <div class="h5 text-dark">Got a question?</div>
-                <p class="text-muted mb-0">Browse FAQ's to find solutions.</p>
+                <p class="text-muted mb-0">Browse FAQs.</p>
               </a>
             </div>
 
@@ -241,9 +202,7 @@
                   <i class="bi bi-cash-stack"></i>
                 </div>
                 <div class="h5 text-dark">Pricing & Packages</div>
-                <p class="text-muted mb-0">
-                  View our exterior, full detail, and maintenance plans.
-                </p>
+                <p class="text-muted mb-0">View all services.</p>
               </a>
             </div>
           </div>
@@ -252,7 +211,7 @@
       </section>
     </main>
 
-    <!-- Footer-->
+    <!-- Footer -->
     <footer class="bg-dark py-4 mt-auto">
       <div class="container px-5">
         <div class="row align-items-center justify-content-between flex-column flex-sm-row">
@@ -270,9 +229,7 @@
       </div>
     </footer>
 
-    <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
   </body>
 </html>
